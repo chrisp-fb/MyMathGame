@@ -40,12 +40,84 @@
                             <outlet property="delegate" destination="Gkq-7f-oaT" id="pGt-Rb-Aej"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Math Game" id="Tgu-oT-9W7"/>
+                    <navigationItem key="navigationItem" title="My Math Game" id="Tgu-oT-9W7">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="D9f-EL-S2O">
+                            <connections>
+                                <segue destination="gTg-69-yjN" kind="show" id="WgA-dB-ADb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sx-7q-9SY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="275" y="441"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="8KL-1s-UNF">
+            <objects>
+                <viewController id="gTg-69-yjN" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ky3-z1-y3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="S01-ga-zdD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pLc-0E-398">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b41-7m-R3z">
+                                <rect key="frame" x="207" y="84" width="186" height="30"/>
+                                <state key="normal" title="Invite Friends on Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inviteFriends:" destination="gTg-69-yjN" eventType="touchUpInside" id="9Dv-5b-tLI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-vb-n7W">
+                                <rect key="frame" x="258" y="131" width="85" height="30"/>
+                                <state key="normal" title="Share Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharePhoto:" destination="gTg-69-yjN" eventType="touchUpInside" id="7ow-Wq-s01"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68k-jZ-gpZ" customClass="FBSDKLikeControl">
+                                <rect key="frame" x="276" y="183" width="48" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50m-82-nSw">
+                                <rect key="frame" x="225" y="340" width="137" height="30"/>
+                                <state key="normal" title="Get Facebook Likes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getLikes:" destination="gTg-69-yjN" eventType="touchUpInside" id="NeK-sV-w1m"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmu-6v-0Zv" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="174" y="282" width="242" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nmu-6v-0Zv" secondAttribute="centerX" id="0yp-fk-tp6"/>
+                            <constraint firstAttribute="centerX" secondItem="b41-7m-R3z" secondAttribute="centerX" id="32R-ZT-iCt"/>
+                            <constraint firstAttribute="centerX" secondItem="50m-82-nSw" secondAttribute="centerX" id="Pk8-JN-NRk"/>
+                            <constraint firstAttribute="centerX" secondItem="68k-jZ-gpZ" secondAttribute="centerX" id="bKv-09-fLA"/>
+                            <constraint firstAttribute="centerX" secondItem="lSP-vb-n7W" secondAttribute="centerX" id="suA-W5-WiB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="likeControl" destination="68k-jZ-gpZ" id="xyn-lc-efV"/>
+                        <outlet property="loginButton" destination="nmu-6v-0Zv" id="1Fw-LM-9bB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbk-aA-NmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="1169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L73-We-M0R">

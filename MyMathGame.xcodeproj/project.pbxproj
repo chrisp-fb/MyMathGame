@@ -14,6 +14,10 @@
 		9D41E9971B0E5BD5006D5D6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D41E9961B0E5BD5006D5D6C /* Images.xcassets */; };
 		9D41E99A1B0E5BD5006D5D6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D41E9981B0E5BD5006D5D6C /* LaunchScreen.xib */; };
 		9D41E9A61B0E5BD5006D5D6C /* MyMathGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D41E9A51B0E5BD5006D5D6C /* MyMathGameTests.m */; };
+		9D41E9B01B0E7518006D5D6C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D41E9AF1B0E7518006D5D6C /* FBSDKCoreKit.framework */; };
+		9D41E9B31B0E7A3D006D5D6C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D41E9B21B0E7A3D006D5D6C /* SettingsViewController.m */; };
+		9D41E9B51B0E7A8A006D5D6C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D41E9B41B0E7A8A006D5D6C /* FBSDKShareKit.framework */; };
+		9D41E9B71B0E85DD006D5D6C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D41E9B61B0E85DD006D5D6C /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		9D41E99F1B0E5BD5006D5D6C /* MyMathGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMathGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D41E9A41B0E5BD5006D5D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D41E9A51B0E5BD5006D5D6C /* MyMathGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMathGameTests.m; sourceTree = "<group>"; };
+		9D41E9AF1B0E7518006D5D6C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		9D41E9B11B0E7A3D006D5D6C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9D41E9B21B0E7A3D006D5D6C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		9D41E9B41B0E7A8A006D5D6C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		9D41E9B61B0E85DD006D5D6C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D41E9B51B0E7A8A006D5D6C /* FBSDKShareKit.framework in Frameworks */,
+				9D41E9B01B0E7518006D5D6C /* FBSDKCoreKit.framework in Frameworks */,
+				9D41E9B71B0E85DD006D5D6C /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,9 @@
 		9D41E97D1B0E5BD5006D5D6C = {
 			isa = PBXGroup;
 			children = (
+				9D41E9B61B0E85DD006D5D6C /* FBSDKLoginKit.framework */,
+				9D41E9B41B0E7A8A006D5D6C /* FBSDKShareKit.framework */,
+				9D41E9AF1B0E7518006D5D6C /* FBSDKCoreKit.framework */,
 				9D41E9881B0E5BD5006D5D6C /* MyMathGame */,
 				9D41E9A21B0E5BD5006D5D6C /* MyMathGameTests */,
 				9D41E9871B0E5BD5006D5D6C /* Products */,
@@ -89,6 +104,8 @@
 				9D41E9961B0E5BD5006D5D6C /* Images.xcassets */,
 				9D41E9981B0E5BD5006D5D6C /* LaunchScreen.xib */,
 				9D41E9891B0E5BD5006D5D6C /* Supporting Files */,
+				9D41E9B11B0E7A3D006D5D6C /* SettingsViewController.h */,
+				9D41E9B21B0E7A3D006D5D6C /* SettingsViewController.m */,
 			);
 			path = MyMathGame;
 			sourceTree = "<group>";
@@ -222,6 +239,7 @@
 				9D41E9921B0E5BD5006D5D6C /* ViewController.m in Sources */,
 				9D41E98F1B0E5BD5006D5D6C /* AppDelegate.m in Sources */,
 				9D41E98C1B0E5BD5006D5D6C /* main.m in Sources */,
+				9D41E9B31B0E7A3D006D5D6C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrisp/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = MyMathGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrisp/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = MyMathGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

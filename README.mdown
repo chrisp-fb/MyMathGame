@@ -1,0 +1,15 @@
+# Demonstration of Facebook SDK for iOS v4.0
+This was the demo used in the talk I gave for the Seattle iOS Meetup group in May 2015.
+
+The initial comment contains the contrived app : a single table view listing the unlocked levels of an arithmetic math game.
+
+# Facebook Integration
+1. FBSDKCoreKit: [App Events](https://developers.facebook.com/docs/app-events/ios) to log app activations and what level the user gets to.
+2. FBSDKShareKit: [App Invites](https://developers.facebook.com/docs/app-invites/ios), [Photo Sharing](https://developers.facebook.com/docs/sharing/ios), and the [Like Button](https://developers.facebook.com/docs/sharing/ios#buttons). Thanks to thecatapi.com for random imagery.
+3. FBSDKLoginKit: [Login with Facebook](https://developers.facebook.com/docs/facebook-login/ios/v2.3).
+
+# To Use
+Since this is an unpublished the app, the FacebookAppID is restricted to developers of the app. If you want to exercise the app with your own Facebook account, create a new Facebook App and use your own App ID in the plist.
+
+# Questions?
+Feel free to submit pull requests or issues here.

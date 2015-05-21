@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface ViewController () {
   NSInteger _currentLevel;
@@ -67,6 +68,10 @@
     if (userAnswer == answer) {
       self.currentLevel = self.currentLevel + 1;
       [self.tableView reloadData];
+      [FBSDKAppEvents logEvent:FBSDKAppEventNameAchievedLevel parameters:@{
+                                                                           FBSDKAppEventParameterNameLevel : @(self.currentLevel)
+                                                                           }];
+      [FBSDKAppEvents flush];
     }
   }];
   [alertController addAction:action];
